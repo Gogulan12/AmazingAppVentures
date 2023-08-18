@@ -1,8 +1,8 @@
 import React from "react";
-import scaveng from "../Assets/brands/ScavengEARTH.jpg";
-import seekqr from "../Assets/brands/SeekQR-Icon.jpg";
-import sightseekr from "../Assets/brands/SightSeekr-Icon1.jpg";
-import quizquest from "../Assets/brands/QuizQuest-Icon.jpg";
+import scaveng from "../../Assets/brands/ScavengEARTH.jpg";
+import seekqr from "../../Assets/brands/SeekQR-Icon.jpg";
+import sightseekr from "../../Assets/brands/SightSeekr-Icon1.jpg";
+import quizquest from "../../Assets/brands/QuizQuest-Icon.jpg";
 
 import "./Brands.css";
 

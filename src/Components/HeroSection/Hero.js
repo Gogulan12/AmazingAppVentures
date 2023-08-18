@@ -1,10 +1,10 @@
 import React from "react";
 
 // import phone from "../Assets/phone.png";
-import mobileappimage from "../Assets/mobileAppUndraw.svg";
+import mobileappimage from "../../Assets/mobileAppUndraw.svg";
 import "./Hero.css";
-import apple from "../Assets/apple.svg";
-import google from "../Assets/google.svg";
+import apple from "../../Assets/apple.svg";
+import google from "../../Assets/google.svg";
 
 export default function Hero() {
   return (

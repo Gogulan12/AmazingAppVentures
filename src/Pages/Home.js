@@ -1,15 +1,15 @@
 import React from "react";
 
 import "./Home.css";
-import Navigation from "../Components/Navigation";
-import Hero from "../Components/Hero";
-import About from "../Components/About";
-import VideoSection from "../Components/VideoSection";
-import Brands from "../Components/Brands";
-import Slideshow from "../Components/Slideshow";
-import Faqsection from "../Components/Faqsection";
-import Footer from "../Components/Footer";
-import Contact from "../Components/Contact";
+import Navigation from "../Components/NavigationSection/Navigation";
+import Hero from "../Components/HeroSection/Hero";
+import About from "../Components/AboutSection/About";
+import VideoSection from "../Components/VideoSection/VideoSection";
+import Brands from "../Components//BrandSection/Brands";
+import Slideshow from "../Components/SlideSection/Slideshow";
+import Faqsection from "../Components/FaqSection/Faqsection";
+import Footer from "../Components/FooterSection/Footer";
+import Contact from "../Components/ContactSection/Contact";
 
 export default function Home() {
   return (

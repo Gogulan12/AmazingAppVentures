@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import slide1 from "../Assets/slides/gameslide1.png";
-import slide2 from "../Assets/slides/gameslide2.png";
-import slide3 from "../Assets/slides/gameslide3.png";
-import slide4 from "../Assets/slides/gameslide4.png";
-import slide5 from "../Assets/slides/gameslide5.png";
+import slide1 from "../../Assets/slides/gameslide1.png";
+import slide2 from "../../Assets/slides/gameslide2.png";
+import slide3 from "../../Assets/slides/gameslide3.png";
+import slide4 from "../../Assets/slides/gameslide4.png";
+import slide5 from "../../Assets/slides/gameslide5.png";
 
 import "./Slideshow.css";
 

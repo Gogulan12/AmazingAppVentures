@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./Navigation.css";
-import logo from "../Assets/logo/logo.png";
+import logo from "../../Assets/logo/logo.png";
 
 export default function Navigation() {
   return (
