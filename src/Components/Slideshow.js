@@ -25,7 +25,7 @@ function Slideshow() {
       <button className="arrow-button prev" onClick={goToPrevSlide}>
         &#8592;
       </button>
-      <img src={images[currentIndex]} alt={`Image ${currentIndex + 1}`} />
+      <img src={images[currentIndex]} alt={` ${currentIndex + 1}`} />
       <button className="arrow-button next" onClick={goToNextSlide}>
         &#8594;
       </button>
