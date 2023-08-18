@@ -7,6 +7,7 @@ import About from "../Components/About";
 import VideoSection from "../Components/VideoSection";
 import Brands from "../Components/Brands";
 import Slideshow from "../Components/Slideshow";
+import Faqsection from "../Components/Faqsection";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <VideoSection />
       <Brands />
       <Slideshow />
+      <Faqsection />
     </div>
   );
 }
