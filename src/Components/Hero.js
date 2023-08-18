@@ -26,7 +26,7 @@ export default function Hero() {
           </div>
         </div>
         <div className="rightHeroSection">
-          <div className="peekContainer">
+          <div className="peekContainer bounce-image">
             {/* <img className="peekImage" src={phone} alt="phone" /> */}
             <img src={mobileappimage} alt="" />
           </div>
