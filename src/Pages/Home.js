@@ -10,10 +10,12 @@ import Slideshow from "../Components/SlideSection/Slideshow";
 import Faqsection from "../Components/FaqSection/Faqsection";
 import Footer from "../Components/FooterSection/Footer";
 import Contact from "../Components/ContactSection/Contact";
+import BackToTopButton from "../Components/BacktoTop/BackToTopButton";
 
 export default function Home() {
   return (
     <div className="homepage">
+      <BackToTopButton />
       <Navigation />
       <Hero />
       <About />
