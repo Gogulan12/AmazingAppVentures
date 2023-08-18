@@ -1,0 +1,8 @@
+.videoSection {
+  padding: 100px 0;
+}
+
+.video {
+  display: flex;
+  justify-content: center;
+}

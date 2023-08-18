@@ -1,0 +1,10 @@
+.slideshow-container {
+  max-width: 800px; /* Adjust as needed */
+  margin: 0 auto;
+  text-align: center;
+}
+
+.slideshow-container img {
+  max-width: 100%;
+  height: auto;
+}

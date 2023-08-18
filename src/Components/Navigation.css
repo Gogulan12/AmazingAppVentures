@@ -1,0 +1,49 @@
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  padding: 0;
+}
+
+.menu ul li {
+  /* gap: 20px; */
+}
+
+.navigation .logo img {
+  width: 100px;
+}
+
+/* .download button {
+  border-radius: 5em;
+  background-color: #ffffff;
+  font-family: "Be Vietnam Pro", sans-serif;
+  padding: 12.75px 19.5px;
+} */
+
+.download button {
+  /* padding: 10px 20px; */
+  /* border: none; */
+  padding: 12.75px 19.5px;
+  font-family: "Be Vietnam Pro", sans-serif;
+  border-radius: 5em;
+  cursor: pointer;
+  background: linear-gradient(to right, #78c9ff, #3498db);
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+
+  transition: background-size 0.3s ease;
+}
+
+.download button:hover {
+  background-size: 100% 100%;
+  color: white;
+}

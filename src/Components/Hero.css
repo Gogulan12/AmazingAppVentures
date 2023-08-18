@@ -1,0 +1,42 @@
+.HeroSectionContainer {
+  background-color: rgb(255, 242, 231);
+}
+.HeroSection {
+  display: flex;
+  height: 70vh;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* .peekContainer:hover .peekImage {
+  transform: translateY(0);
+} */
+
+.leftHeroSection {
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.leftHeroSection,
+.rightHeroSection {
+  width: 50%;
+}
+
+.leftHeroSection h1 {
+  font-size: 5rem;
+  margin: 0;
+}
+
+.heroButtons {
+  display: flex;
+  gap: 1em;
+  margin-top: 50px;
+}
+
+.rightHeroSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
