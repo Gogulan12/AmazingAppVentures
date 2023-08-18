@@ -1,7 +1,7 @@
 import React from "react";
 
-import phone from "../Assets/phone.png";
-import image from "../Assets/mobileAppUndraw.svg";
+// import phone from "../Assets/phone.png";
+import mobileappimage from "../Assets/mobileAppUndraw.svg";
 import "./Hero.css";
 import apple from "../Assets/apple.svg";
 import google from "../Assets/google.svg";
@@ -17,10 +17,10 @@ export default function Hero() {
             museums and travel providers.
           </h2>
           <div className="heroButtons">
-            <a href="#" className="gplay">
+            <a href="/#" className="gplay">
               <img src={google} alt="" />
             </a>
-            <a href="#" className="appstore">
+            <a href="/#" className="appstore">
               <img src={apple} alt="" />
             </a>
           </div>
@@ -28,7 +28,7 @@ export default function Hero() {
         <div className="rightHeroSection">
           <div className="peekContainer">
             {/* <img className="peekImage" src={phone} alt="phone" /> */}
-            <img src={image} alt="" />
+            <img src={mobileappimage} alt="" />
           </div>
         </div>
       </div>
