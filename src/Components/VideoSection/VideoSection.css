@@ -1,6 +1,13 @@
 .videoSection {
   /* padding: 100px 0; */
   /* background-color: #92bad9; */
+  background: rgb(13, 121, 9);
+  background: linear-gradient(
+    180deg,
+    rgba(13, 121, 9, 0) 0%,
+    rgba(31, 187, 146, 0.4654236694677871) 100%
+  );
+  padding: 100px;
 }
 
 .videoSection h2 {

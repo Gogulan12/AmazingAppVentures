@@ -1,8 +1,15 @@
+.aboutsectioncontainer {
+  /* background-image: url("../../Assets/background1.jpg");
+  background-repeat: no-repeat; */
+  /* background-size: cont; */
+}
+
 .aboutSection {
   max-width: 1200px;
   margin: 0 auto;
   padding: 200px 0;
   display: flex;
+  /* background-image: url("../../Assets/background1.jpg"); */
 }
 
 .aboutContent {

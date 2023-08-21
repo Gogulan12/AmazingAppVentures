@@ -1,3 +1,7 @@
+.navigationsection {
+  box-shadow: 0px -5px 20px gray;
+  position: relative;
+}
 .navigation {
   display: flex;
   justify-content: center;

@@ -1,5 +1,11 @@
 .HeroSectionContainer {
   /* background-color: rgb(255, 242, 231); */
+  background: rgb(174, 205, 238);
+  background: linear-gradient(
+    180deg,
+    rgba(174, 205, 238, 1) 0%,
+    rgba(148, 233, 221, 0.020045518207282953) 100%
+  );
 }
 .HeroSection {
   display: flex;
