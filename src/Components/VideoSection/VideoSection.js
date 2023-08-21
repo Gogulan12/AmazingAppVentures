@@ -11,6 +11,7 @@ export default function VideoSection() {
   };
   return (
     <div className="videoSection">
+      <h2>Watch Amazing AppVentures in Action</h2>
       <div className="video">
         {/* <iframe
           width="840"

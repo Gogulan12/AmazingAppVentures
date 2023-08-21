@@ -7,32 +7,79 @@ import slide5 from "../../Assets/slides/gameslide5.png";
 
 import "./Slideshow.css";
 
+import leftarrow from "../../Assets/left.svg";
+import rightarrow from "../../Assets/right.svg";
+
 const images = [slide1, slide2, slide3, slide4, slide5];
 
-function Slideshow() {
+// function Slideshow() {
+//   const [currentIndex, setCurrentIndex] = useState(0);
+
+//   const goToNextSlide = () => {
+//     setCurrentIndex((currentIndex + 1) % images.length);
+//   };
+
+//   const goToPrevSlide = () => {
+//     setCurrentIndex((currentIndex - 1 + images.length) % images.length);
+//   };
+
+//   return (
+//     <div className="slideshow-container">
+//       <button className="arrow-button prev" onClick={goToPrevSlide}>
+//         &#8592;
+//       </button>
+//       <div className="imageinslide">
+//         <img src={images[currentIndex]} alt={` ${currentIndex + 1}`} />
+//       </div>
+//       <button className="arrow-button next" onClick={goToNextSlide}>
+//         &#8594;
+//       </button>
+//     </div>
+//   );
+// }
+
+// export default Slideshow;
+
+const Slideshow = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const goToNextSlide = () => {
-    setCurrentIndex((currentIndex + 1) % images.length);
+  const handlePrev = () => {
+    const newIndex = currentIndex === 0 ? images.length - 1 : currentIndex - 1;
+    setCurrentIndex(newIndex);
   };
 
-  const goToPrevSlide = () => {
-    setCurrentIndex((currentIndex - 1 + images.length) % images.length);
+  const handleNext = () => {
+    const newIndex = currentIndex === images.length - 1 ? 0 : currentIndex + 1;
+    setCurrentIndex(newIndex);
   };
 
   return (
-    <div className="slideshow-container">
-      <button className="arrow-button prev" onClick={goToPrevSlide}>
-        &#8592;
+    <div className="slider-container">
+      <button onClick={handlePrev} className="slider-button prev-button">
+        <img src={leftarrow} alt="" />
       </button>
-      <div className="imageinslide">
-        <img src={images[currentIndex]} alt={` ${currentIndex + 1}`} />
+      <div className="image-slider">
+        <div
+          className="image-slide"
+          style={{
+            transform: `translateX(-${currentIndex * (100 / images.length)}%)`,
+          }}
+        >
+          {images.map((imageUrl, index) => (
+            <img
+              key={index}
+              src={imageUrl}
+              alt={`Slide ${index}`}
+              className="slide-image"
+            />
+          ))}
+        </div>
       </div>
-      <button className="arrow-button next" onClick={goToNextSlide}>
-        &#8594;
+      <button onClick={handleNext} className="slider-button next-button">
+        <img src={rightarrow} alt="" />
       </button>
     </div>
   );
-}
+};
 
 export default Slideshow;

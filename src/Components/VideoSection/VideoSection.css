@@ -1,6 +1,11 @@
 .videoSection {
-  padding: 100px 0;
+  /* padding: 100px 0; */
   /* background-color: #92bad9; */
+}
+
+.videoSection h2 {
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .video {
