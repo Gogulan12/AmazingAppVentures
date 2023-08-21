@@ -20,7 +20,7 @@ function BackToTopButton() {
   }, []);
 
   return (
-    <a href="#" className={`back-to-top-btn ${isVisible ? "show-btn" : ""}`}>
+    <a href="/#" className={`back-to-top-btn ${isVisible ? "show-btn" : ""}`}>
       Back to Top
     </a>
   );
