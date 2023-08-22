@@ -47,6 +47,10 @@
   justify-content: center;
 }
 
+.rightHeroSection img {
+  width: 100%;
+}
+
 /* .bounce-image {
   animation: bounce 3s infinite;
 }

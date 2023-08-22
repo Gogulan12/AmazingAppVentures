@@ -1,10 +1,11 @@
 import React from "react";
 
 // import phone from "../Assets/phone.png";
-import mobileappimage from "../../Assets/mobileAppUndraw.svg";
+// import mobileappimage from "../../Assets/mobileAppUndraw.svg";
 import "./Hero.css";
 import apple from "../../Assets/apple.svg";
 import google from "../../Assets/google.svg";
+import onlineCollab from "../../Assets/onlineCollab.svg";
 
 export default function Hero() {
   return (
@@ -28,7 +29,7 @@ export default function Hero() {
         <div className="rightHeroSection">
           <div className="peekContainer bounce-image">
             {/* <img className="peekImage" src={phone} alt="phone" /> */}
-            <img src={mobileappimage} alt="" />
+            <img src={onlineCollab} alt="" />
           </div>
         </div>
       </div>

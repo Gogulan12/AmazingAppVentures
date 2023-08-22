@@ -2,14 +2,15 @@ import React from "react";
 
 import "./About.css";
 
-import aboutimage from "../../Assets/aboutsection.svg";
+// import aboutimage from "../../Assets/aboutsection.svg";
+import teamCollab from "../../Assets/TeamCollab.svg";
 
 export default function About() {
   return (
     <div className="aboutsectioncontainer">
       <div className="aboutSection">
         <div className="aboutImage">
-          <img src={aboutimage} alt="" />
+          <img src={teamCollab} alt="" />
         </div>
         <div className="aboutContent">
           <h2>Who are we?</h2>

@@ -1,22 +1,27 @@
 import React from "react";
-import scaveng from "../../Assets/brands/ScavengEARTH.jpg";
-import seekqr from "../../Assets/brands/SeekQR-Icon.jpg";
-import sightseekr from "../../Assets/brands/SightSeekr-Icon1.jpg";
-import quizquest from "../../Assets/brands/QuizQuest-Icon.jpg";
+// import scaveng from "../../Assets/brands/ScavengEARTH.jpg";
+// import seekqr from "../../Assets/brands/SeekQR-Icon.jpg";
+// import sightseekr from "../../Assets/brands/SightSeekr-Icon1.jpg";
+// import quizquest from "../../Assets/brands/QuizQuest-Icon.jpg";
+
+import wickedhunt from "../../Assets/brands/WICKEDHUNTSLOGO.png";
+import racing from "../../Assets/brands/AppMazingRace.png";
+import hunt from "../../Assets/brands/AppMazingHunt.png";
+import agent from "../../Assets/brands/Agent777Goldenapp.png";
 
 import "./Brands.css";
 
 export default function Brands() {
   return (
     <div className="Brandsection">
-      <h2>Brands</h2>
+      <h2>OUR IN-HOUSE BRANDS</h2>
       <div className="grid-container">
         <div className="brand grid-item">
           <div className="brandimageContainer">
-            <img src={scaveng} alt="" />
+            <img src={wickedhunt} alt="" />
           </div>
           <div className="brandContentContainer">
-            <h3>ScavengEARTH</h3>
+            <h3>Wicked Hunts</h3>
             <p>
               Offering venues and properties four interactive mobile games for
               team building or entertainment, including ScavengEARTH, Custom
@@ -28,10 +33,10 @@ export default function Brands() {
         </div>
         <div className="brand grid-item">
           <div className="brandimageContainer">
-            <img src={seekqr} alt="" />
+            <img src={hunt} alt="" />
           </div>
           <div className="brandContentContainer">
-            <h3>seekQR</h3>
+            <h3>AppMazing Hunt</h3>
             <p>
               Offering venues and properties four interactive mobile games for
               team building or entertainment, including ScavengEARTH, Custom
@@ -43,10 +48,10 @@ export default function Brands() {
         </div>
         <div className="brand grid-item">
           <div className="brandimageContainer">
-            <img src={sightseekr} alt="" />
+            <img src={racing} alt="" />
           </div>
           <div className="brandContentContainer">
-            <h3>sightseekr</h3>
+            <h3>AppMazing Race</h3>
             <p>
               Offering venues and properties four interactive mobile games for
               team building or entertainment, including ScavengEARTH, Custom
@@ -58,10 +63,10 @@ export default function Brands() {
         </div>
         <div className="brand grid-item">
           <div className="brandimageContainer">
-            <img src={quizquest} alt="" />
+            <img src={agent} alt="" />
           </div>
           <div className="brandContentContainer">
-            <h3>QuizQuest</h3>
+            <h3>Agent 777</h3>
             <p>
               Offering venues and properties four interactive mobile games for
               team building or entertainment, including ScavengEARTH, Custom
