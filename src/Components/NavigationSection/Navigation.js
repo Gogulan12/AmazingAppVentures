@@ -90,7 +90,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import { useState } from "react";
 
 import "./Navigation.css";
-import logo from "../../Assets/logo/logo.png";
+// import logo from "../../Assets/logo/logo.png";
 export default function Navigation() {
   const [menuOpen, setMenuOpen] = useState(false);
 
