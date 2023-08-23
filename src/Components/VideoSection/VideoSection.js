@@ -11,17 +11,10 @@ export default function VideoSection() {
   };
   return (
     <div className="videoSection">
-      <h2>Watch Amazing AppVentures in Action</h2>
+      <h2>
+        Watch Amazing <span>AppVentures</span> in Action
+      </h2>
       <div className="video">
-        {/* <iframe
-          width="840"
-          height="472.5"
-          src="https://www.youtube.com/embed/lyKd9qD51fo"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe> */}
         <div className="video-container">
           {isVideoPlaying ? (
             <iframe

@@ -2,7 +2,6 @@ import React from "react";
 
 import "./About.css";
 
-// import aboutimage from "../../Assets/aboutsection.svg";
 import teamCollab from "../../Assets/TeamCollab.svg";
 
 export default function About() {
