@@ -54,6 +54,18 @@
   margin-top: 50px;
 }
 
+.heroButtons a {
+  transition: all 0.2s ease-in-out;
+}
+
+.heroButtons a:hover {
+  transform: scale(1.1);
+}
+
+.heroButtons a:active {
+  transform: scale(1);
+}
+
 .heroButtons img {
   height: 50px;
 }
@@ -116,5 +128,41 @@
   }
   .peekContainer img {
     height: 350px;
+  }
+}
+
+@media (max-width: 650px) {
+  .leftHeroSection h1 {
+    font-size: 4rem;
+  }
+  .leftHeroSection h2 {
+    font-size: 1rem;
+    width: 50%;
+  }
+}
+
+@media (max-width: 520px) {
+  .leftHeroSection h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .leftHeroSection h1 {
+    font-size: 2.3rem;
+  }
+  .leftHeroSection h2 {
+    font-size: 1rem;
+    width: 70%;
+  }
+  .heroButtons {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 320px) {
+  .leftHeroSection h1 {
+    font-size: 2rem;
   }
 }
