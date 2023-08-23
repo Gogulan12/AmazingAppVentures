@@ -1,3 +1,10 @@
+.BrandsectionContainer {
+  background: linear-gradient(
+    180deg,
+    rgba(174, 205, 238, 0.5) 0%,
+    rgba(148, 233, 221, 0.020045518207282953) 100%
+  );
+}
 .Brandsection {
   padding: 100px 0;
   max-width: 1200px;
@@ -6,6 +13,10 @@
 
 .Brandsection h2 {
   text-align: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: #0075aa;
+  margin-bottom: 80px;
 }
 
 .grid-container {
@@ -17,12 +28,49 @@
 .grid-item {
   display: flex;
   align-items: center;
-  /* border: 1px solid #ccc; */
+
   padding: 20px;
 }
 
 .grid-item img {
-  max-width: 100px;
+  /* max-width: 100px; */
   height: auto;
-  margin-right: 20px;
+  /* margin-right: 20px; */
+  /* padding: 20px; */
+  width: 100%;
+}
+
+/* .brandimageContainer {
+  background-color: white;
+  margin: 20px;
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+} */
+
+.brandimage {
+  width: 100px;
+  /* padding: 20px; */
+  background-color: white;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 15px;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.brandContentContainer h3 {
+  color: #0075aa;
+  margin-bottom: 15px;
+}
+
+.brandContentContainer p {
+  font-weight: 300;
+  line-height: 1.8;
 }
