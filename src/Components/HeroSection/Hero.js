@@ -3,8 +3,8 @@ import React from "react";
 // import phone from "../Assets/phone.png";
 // import mobileappimage from "../../Assets/mobileAppUndraw.svg";
 import "./Hero.css";
-import apple from "../../Assets/apple.svg";
-import google from "../../Assets/google.svg";
+import apple from "../../Assets/apple.png";
+import google from "../../Assets/google.png";
 import onlineCollab from "../../Assets/onlineCollab.svg";
 
 export default function Hero() {
@@ -12,7 +12,10 @@ export default function Hero() {
     <div className="HeroSectionContainer">
       <div className="HeroSection">
         <div className="leftHeroSection">
-          <h1>Amazing AppVentures</h1>
+          <h1>
+            Amazing <br />
+            <span>AppVentures</span>
+          </h1>
           <h2>
             The most advanced and fun gamification platform for corporations,
             museums and travel providers.
