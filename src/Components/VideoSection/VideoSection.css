@@ -22,7 +22,7 @@
   font-size: 2rem;
 }
 
-.videoSection h2 span {
+.videoSection h2 .titlecolorchange {
   color: #d93f2f;
 }
 
@@ -102,6 +102,10 @@
   iframe {
     width: 420px;
     height: 236.25px;
+  }
+
+  .videoSection h2 .title {
+    display: block;
   }
 }
 

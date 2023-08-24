@@ -74,3 +74,21 @@
   font-weight: 300;
   line-height: 1.8;
 }
+
+@media (max-width: 1020px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 570px) {
+  .grid-item {
+    display: flex;
+    flex-direction: column;
+  }
+  .brandContentContainer {
+    text-align: center;
+  }
+}

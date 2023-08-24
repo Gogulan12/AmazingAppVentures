@@ -12,7 +12,11 @@ export default function VideoSection() {
   return (
     <div className="videoSection">
       <h2>
-        Watch Amazing <span>AppVentures</span> in Action
+        Watch{" "}
+        <span className="title">
+          Amazing <span className="titlecolorchange">AppVentures</span>{" "}
+        </span>
+        in Action
       </h2>
       <div className="video">
         <div className="video-container">
