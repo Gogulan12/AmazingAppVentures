@@ -50,9 +50,11 @@ function Faqsection() {
               onClick={() => toggleAccordion(index)}
             >
               <h3>{item.question}</h3>
-              <span
-                className={`arrow ${activeIndex === index ? "active" : ""}`}
-              ></span>
+              <div className="arrow-container">
+                <span
+                  className={`arrow ${activeIndex === index ? "active" : ""}`}
+                ></span>
+              </div>
             </div>
             <div
               className={`faq-answer ${activeIndex === index ? "open" : ""}`}

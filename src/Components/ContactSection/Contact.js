@@ -5,7 +5,7 @@ import phones from "../../Assets/phones.jpg";
 
 function Contact() {
   return (
-    <div>
+    <div className="contactSection">
       <section className="contact-us">
         <div className="contact-form">
           <h2>Contact Us</h2>
