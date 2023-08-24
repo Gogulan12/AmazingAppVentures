@@ -20,11 +20,6 @@
   /* transition: all 0.2s ease-in-out; */
 }
 
-.faq-item {
-  /* margin-bottom: 20px; */
-  /* transition: all 0.2s ease-in-out; */
-}
-
 .faq-question {
   display: flex;
   justify-content: space-between;
