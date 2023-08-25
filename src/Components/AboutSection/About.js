@@ -6,7 +6,7 @@ import teamCollab from "../../Assets/TeamCollab.svg";
 
 export default function About() {
   return (
-    <div className="aboutsectioncontainer">
+    <div className="aboutsectioncontainer" id="about">
       <div className="aboutSection">
         <div className="aboutImage">
           <img src={teamCollab} alt="" />

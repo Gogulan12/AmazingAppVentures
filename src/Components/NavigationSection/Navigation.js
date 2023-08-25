@@ -11,6 +11,10 @@ export default function Navigation() {
     setMenuOpen(!menuOpen);
   };
 
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <>
       <nav>
@@ -26,22 +30,22 @@ export default function Navigation() {
           <div className={`itemContainer ${menuOpen ? "open" : ""}`}>
             <ul className="NavMenu">
               <li className="NavItem">
-                <a href="/#" className="NavLinks">
+                <a href="/#" className="NavLinks" onClick={closeMenu}>
                   Home
                 </a>
               </li>
               <li className="NavItem">
-                <a href="/#" className="NavLinks">
+                <a href="/#about" className="NavLinks" onClick={closeMenu}>
                   About
                 </a>
               </li>
               <li className="NavItem">
-                <a href="/#" className="NavLinks">
+                <a href="/#brand" className="NavLinks" onClick={closeMenu}>
                   Brands
                 </a>
               </li>
               <li className="NavItem">
-                <a href="/#" className="NavLinks">
+                <a href="/#contact" className="NavLinks" onClick={closeMenu}>
                   Contact
                 </a>
               </li>

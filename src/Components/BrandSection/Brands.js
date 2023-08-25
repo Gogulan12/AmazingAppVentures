@@ -9,7 +9,7 @@ import "./Brands.css";
 
 export default function Brands() {
   return (
-    <div className="BrandsectionContainer">
+    <div className="BrandsectionContainer" id="brand">
       <div className="Brandsection">
         <h2>OUR IN-HOUSE BRANDS</h2>
         <div className="grid-container">
