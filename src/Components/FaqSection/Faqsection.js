@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./Faqsection.css"; // Create this CSS file for styling
 
 const faqData = [
@@ -34,13 +35,36 @@ const faqData = [
 
 function Faqsection() {
   const [activeIndex, setActiveIndex] = useState(null);
+  const [isVisible, setIsVisible] = useState(false);
+  const faqRef = useRef(null);
 
   const toggleAccordion = (index) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
 
+  const handleScroll = () => {
+    if (faqRef.current) {
+      const rect = faqRef.current.getBoundingClientRect();
+      const windowHeight =
+        window.innerHeight || document.documentElement.clientHeight;
+      setIsVisible(rect.top <= windowHeight * 0.5);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="faqsection" id="faq">
+    // <div className="faqsection" id="faq">
+    <div
+      className={`faqsection ${isVisible ? "visible" : ""}`}
+      id="faq"
+      ref={faqRef}
+    >
       <h2>FAQ</h2>
       <div className="faq-container">
         {faqData.map((item, index) => (

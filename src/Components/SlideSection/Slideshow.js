@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import slide1 from "../../Assets/slides/gameslide1.png";
 import slide2 from "../../Assets/slides/gameslide2.png";
 import slide3 from "../../Assets/slides/gameslide3.png";
@@ -14,6 +15,8 @@ const images = [slide1, slide2, slide3, slide4, slide5];
 
 const Slideshow = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isVisible, setIsVisible] = useState(false);
+  const slideshowRef = useRef(null);
 
   const handlePrev = () => {
     const newIndex = currentIndex === 0 ? images.length - 1 : currentIndex - 1;
@@ -25,8 +28,28 @@ const Slideshow = () => {
     setCurrentIndex(newIndex);
   };
 
+  const handleScroll = () => {
+    if (slideshowRef.current) {
+      const rect = slideshowRef.current.getBoundingClientRect();
+      const windowHeight =
+        window.innerHeight || document.documentElement.clientHeight;
+      setIsVisible(rect.top <= windowHeight * 0.5);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="slider-container">
+    // <div className="slider-container">
+    <div
+      className={`slider-container ${isVisible ? "visible" : ""}`}
+      ref={slideshowRef}
+    >
       <button onClick={handlePrev} className="slider-button prev-button">
         <img src={leftarrow} alt="" />
       </button>

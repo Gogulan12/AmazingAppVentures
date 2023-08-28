@@ -61,6 +61,18 @@
   /* transition: all 0.2s ease-in-out; */
 }
 
+/* For FAQ Section */
+.faqsection {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.faqsection.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 @media (max-width: 800px) {
   .faq-container {
     margin: 0 20px;
