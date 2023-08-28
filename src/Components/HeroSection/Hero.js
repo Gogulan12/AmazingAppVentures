@@ -25,6 +25,7 @@ export default function Hero() {
               href="https://play.google.com/store/apps"
               className="gplay"
               target="_blank"
+              rel="noopener"
             >
               <img src={google} alt="" />
             </a>
@@ -32,6 +33,7 @@ export default function Hero() {
               href="https://apps.apple.com/us/app/appventures-hunts-races/id1027275384"
               className="appstore"
               target="_blank"
+              rel="noopener"
             >
               <img src={apple} alt="" />
             </a>
