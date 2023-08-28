@@ -1,12 +1,36 @@
-import React from "react";
+// import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 import "./About.css";
 
 import teamCollab from "../../Assets/TeamCollab.svg";
 
 export default function About() {
+  const [isVisible, setIsVisible] = useState(false);
+  const aboutRef = useRef(null);
+
+  const handleScroll = () => {
+    if (aboutRef.current) {
+      const rect = aboutRef.current.getBoundingClientRect();
+      const windowHeight =
+        window.innerHeight || document.documentElement.clientHeight;
+      setIsVisible(rect.top <= windowHeight * 0.5);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
-    <div className="aboutsectioncontainer" id="about">
+    // <div className="aboutsectioncontainer" id="about">
+    <div
+      className={`aboutsectioncontainer ${isVisible ? "visible" : ""}`}
+      ref={aboutRef}
+      id="about"
+    >
       <div className="aboutSection">
         <div className="aboutImage">
           <img src={teamCollab} alt="" />
