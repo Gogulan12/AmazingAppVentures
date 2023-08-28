@@ -22,6 +22,18 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  animation: leftsection 1s ease-in-out;
+}
+
+@keyframes leftsection {
+  0% {
+    opacity: 0;
+    transform: translateX(-30%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .leftHeroSection,
@@ -77,6 +89,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  animation: rightsection 1s ease-in-out;
+}
+
+@keyframes rightsection {
+  0% {
+    opacity: 0;
+    transform: translateY(30%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .peekContainer {
