@@ -34,6 +34,7 @@
   line-height: 1.8;
 }
 
+/* effect to appear on scroll */
 .aboutsectioncontainer {
   opacity: 0;
   transform: translateY(20px);
@@ -44,7 +45,7 @@
   opacity: 1;
   transform: translateY(0);
 }
-
+/* /////////////////////////////// */
 @media (max-width: 1090px) {
   .aboutSection {
     display: flex;

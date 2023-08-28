@@ -6,6 +6,7 @@ import "./About.css";
 import teamCollab from "../../Assets/TeamCollab.svg";
 
 export default function About() {
+  // effect to appear on scroll
   const [isVisible, setIsVisible] = useState(false);
   const aboutRef = useRef(null);
 
@@ -24,6 +25,7 @@ export default function About() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  // ///////////////////////////////////
   return (
     // <div className="aboutsectioncontainer" id="about">
     <div

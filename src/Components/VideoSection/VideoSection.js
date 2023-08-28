@@ -1,16 +1,44 @@
-import React from "react";
+// import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 
-import { useState } from "react";
+// import { useState } from "react";
 import "./VideoSection.css";
 
 export default function VideoSection() {
+  // const [isVideoPlaying, setIsVideoPlaying] = useState(false);
+
+  // const handleVideoClick = () => {
+  //   setIsVideoPlaying(true);
+  // };
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
+  const videoRef = useRef(null);
 
   const handleVideoClick = () => {
     setIsVideoPlaying(true);
   };
+
+  const handleScroll = () => {
+    if (videoRef.current) {
+      const rect = videoRef.current.getBoundingClientRect();
+      const windowHeight =
+        window.innerHeight || document.documentElement.clientHeight;
+      setIsVisible(rect.top <= windowHeight * 0.5);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
-    <div className="videoSection">
+    // <div className="videoSection">
+    <div
+      className={`videoSection ${isVisible ? "visible" : ""}`}
+      ref={videoRef}
+    >
       <h2>
         Watch{" "}
         <span className="title">
@@ -19,7 +47,8 @@ export default function VideoSection() {
         in Action
       </h2>
       <div className="video">
-        <div className="video-container">
+        {/* <div className="video-container"> */}
+        <div className={`video-container ${isVideoPlaying ? "visible" : ""}`}>
           {isVideoPlaying ? (
             <iframe
               title="YouTube Video"
