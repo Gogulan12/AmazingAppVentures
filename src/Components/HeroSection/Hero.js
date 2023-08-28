@@ -21,10 +21,18 @@ export default function Hero() {
             museums and travel providers.
           </h2>
           <div className="heroButtons">
-            <a href="/#" className="gplay">
+            <a
+              href="https://play.google.com/store/apps"
+              className="gplay"
+              target="_blank"
+            >
               <img src={google} alt="" />
             </a>
-            <a href="/#" className="appstore">
+            <a
+              href="https://apps.apple.com/us/app/appventures-hunts-races/id1027275384"
+              className="appstore"
+              target="_blank"
+            >
               <img src={apple} alt="" />
             </a>
           </div>

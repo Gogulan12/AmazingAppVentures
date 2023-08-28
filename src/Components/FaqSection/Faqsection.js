@@ -40,7 +40,7 @@ function Faqsection() {
   };
 
   return (
-    <div className="faqsection">
+    <div className="faqsection" id="faq">
       <h2>FAQ</h2>
       <div className="faq-container">
         {faqData.map((item, index) => (

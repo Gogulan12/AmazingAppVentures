@@ -45,14 +45,14 @@ export default function Navigation() {
                 </a>
               </li>
               <li className="NavItem">
-                <a href="/#contact" className="NavLinks" onClick={closeMenu}>
-                  Contact
+                <a href="/#faq" className="NavLinks" onClick={closeMenu}>
+                  FAQ
                 </a>
               </li>
             </ul>
             <div className="NavBtn">
-              <a href="/#" className="NavBtnLink">
-                Download
+              <a href="/#contact" className="NavBtnLink">
+                Contact Us
               </a>
             </div>
           </div>
