@@ -14,7 +14,7 @@
 .footer-content {
   margin-left: 20px;
 }
-.footercontentcontainer a {
+.footercontentcontainer .terms {
   margin-right: 20px;
 }
 
@@ -23,18 +23,19 @@
   margin: 0 auto;
 } */
 
-.footer a {
+.footer .terms {
   color: white;
   text-decoration: none;
+  cursor: pointer;
 }
 
-.footer a:hover {
+.footer .terms:hover {
   color: #aecdee;
 }
 
 @media (max-width: 430px) {
   .footer p,
-  .footercontentcontainer a {
+  .footercontentcontainer .terms {
     font-size: 0.9rem;
     margin: 0 20px;
   }
