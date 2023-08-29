@@ -23,7 +23,7 @@ export default function Footer() {
           <div className="footer-content">
             <p>&copy; 2023 Amazing AppVentures. All rights reserved.</p>
           </div>
-          <a href="#" onClick={openModal}>
+          <a href="/#" onClick={openModal}>
             View Terms and Conditions
           </a>
           <TermsModal isOpen={modalIsOpen} closeModal={closeModal} />
