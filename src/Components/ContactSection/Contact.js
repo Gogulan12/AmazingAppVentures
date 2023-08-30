@@ -12,6 +12,7 @@ function Contact() {
       <section className="contact-us">
         <div className="contact-form">
           <h2>Contact Us</h2>
+
           <form>
             <label htmlFor="name">Name:</label>
             <input type="text" id="name" name="name" required />
@@ -44,7 +45,9 @@ function Contact() {
             Let's have a chat and let us introduce you the future of corporate
             game platforms.
           </p>
-          <button>Schedule a Call</button>
+          <a href="tel:+18888682386">
+            <button>Schedule Now</button>
+          </a>
         </div>
       </section>
     </div>
