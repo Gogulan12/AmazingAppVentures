@@ -1,7 +1,5 @@
 import React from "react";
 
-// import phone from "../Assets/phone.png";
-// import mobileappimage from "../../Assets/mobileAppUndraw.svg";
 import "./Hero.css";
 import apple from "../../Assets/apple.png";
 import google from "../../Assets/google.png";
@@ -20,6 +18,7 @@ export default function Hero() {
             The most advanced and fun gamification platform for corporations,
             museums and travel providers.
           </h2>
+          {/* Download Links */}
           <div className="heroButtons">
             <a
               href="https://play.google.com/store/apps"
@@ -40,8 +39,8 @@ export default function Hero() {
           </div>
         </div>
         <div className="rightHeroSection">
+          {/* Image */}
           <div className="peekContainer bounce-image">
-            {/* <img className="peekImage" src={phone} alt="phone" /> */}
             <img src={onlineCollab} alt="" />
           </div>
         </div>

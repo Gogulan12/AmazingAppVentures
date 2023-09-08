@@ -49,7 +49,6 @@
 }
 
 .leftHeroSection h1 span {
-  /* color: #ef8641; */
   color: #d93f2f;
 }
 
@@ -113,20 +112,6 @@
 .rightHeroSection img {
   width: 80%;
 }
-
-/* .bounce-image {
-  animation: bounce 3s infinite;
-}
-
-@keyframes bounce {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-20px); 
-  }
-} */
 
 /* //////////////////////MEDIA QUERY///////////////// */
 
