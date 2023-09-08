@@ -1,4 +1,3 @@
-// import React from "react";
 import React, { useEffect, useRef } from "react";
 
 import wickedhunt from "../../Assets/brands/WICKEDHUNTSLOGO.png";
@@ -44,9 +43,10 @@ export default function Brands() {
             className="brand grid-item"
             ref={(el) => (brandRefs.current[0] = el)}
           >
+            {/* WICKED HUNTS LOGO AND CONTENT INFO */}
             <div className="brandimageContainer">
               <div className="brandimage">
-                <img src={wickedhunt} alt="" />
+                <img src={wickedhunt} alt="Wicked Hunts Logo" />
               </div>
             </div>
             <div className="brandContentContainer">
@@ -63,9 +63,10 @@ export default function Brands() {
             className="brand grid-item"
             ref={(el) => (brandRefs.current[1] = el)}
           >
+            {/* APPMAZING HUNT LOGO AND CONTENT INFO */}
             <div className="brandimageContainer">
               <div className="brandimage">
-                <img src={hunt} alt="" />
+                <img src={hunt} alt="AppMazing Hunt Logo" />
               </div>
             </div>
             <div className="brandContentContainer">
@@ -82,9 +83,10 @@ export default function Brands() {
             className="brand grid-item"
             ref={(el) => (brandRefs.current[2] = el)}
           >
+            {/* APPMAZING RACE LOGO AND CONTENT INFO */}
             <div className="brandimageContainer">
               <div className="brandimage">
-                <img src={racing} alt="" />
+                <img src={racing} alt="AppMazing Race" />
               </div>
             </div>
             <div className="brandContentContainer">
@@ -101,9 +103,10 @@ export default function Brands() {
             className="brand grid-item"
             ref={(el) => (brandRefs.current[3] = el)}
           >
+            {/* AGENT 777 LOGO AND CONTENT INFO */}
             <div className="brandimageContainer">
               <div className="brandimage">
-                <img src={agent} alt="" />
+                <img src={agent} alt="Agent 777 logo" />
               </div>
             </div>
             <div className="brandContentContainer">

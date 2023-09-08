@@ -26,7 +26,7 @@ export default function Hero() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={google} alt="" />
+              <img src={google} alt="Google play download button" />
             </a>
             <a
               href="https://apps.apple.com/us/app/appventures-hunts-races/id1027275384"
@@ -34,14 +34,14 @@ export default function Hero() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={apple} alt="" />
+              <img src={apple} alt="Apple Store download button" />
             </a>
           </div>
         </div>
         <div className="rightHeroSection">
           {/* Image */}
           <div className="peekContainer bounce-image">
-            <img src={onlineCollab} alt="" />
+            <img src={onlineCollab} alt="People working together on an app" />
           </div>
         </div>
       </div>

@@ -1,15 +1,8 @@
-// import React from "react";
 import React, { useEffect, useRef, useState } from "react";
 
-// import { useState } from "react";
 import "./VideoSection.css";
 
 export default function VideoSection() {
-  // const [isVideoPlaying, setIsVideoPlaying] = useState(false);
-
-  // const handleVideoClick = () => {
-  //   setIsVideoPlaying(true);
-  // };
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
   const videoRef = useRef(null);
@@ -34,7 +27,6 @@ export default function VideoSection() {
     };
   }, []);
   return (
-    // <div className="videoSection">
     <div
       className={`videoSection ${isVisible ? "visible" : ""}`}
       ref={videoRef}
@@ -47,7 +39,6 @@ export default function VideoSection() {
         in Action
       </h2>
       <div className="video">
-        {/* <div className="video-container"> */}
         <div className={`video-container ${isVideoPlaying ? "visible" : ""}`}>
           {isVideoPlaying ? (
             <iframe
