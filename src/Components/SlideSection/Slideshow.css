@@ -66,6 +66,8 @@
   transform: translateY(0);
 }
 
+/* ///////////////////MEDIA QUERY/////////////////////// */
+
 @media (max-width: 350px) {
   .slide-image {
     padding: 15px;

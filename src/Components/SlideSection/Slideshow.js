@@ -1,5 +1,6 @@
-// import React, { useState } from "react";
 import React, { useEffect, useRef, useState } from "react";
+
+//////////////////////////Images for Slide////////
 import slide1 from "../../Assets/slides/gameslide1.png";
 import slide2 from "../../Assets/slides/gameslide2.png";
 import slide3 from "../../Assets/slides/gameslide3.png";
@@ -45,7 +46,6 @@ const Slideshow = () => {
   }, []);
 
   return (
-    // <div className="slider-container">
     <div
       className={`slider-container ${isVisible ? "visible" : ""}`}
       ref={slideshowRef}
@@ -61,6 +61,7 @@ const Slideshow = () => {
           }}
         >
           {images.map((imageUrl, index) => (
+            // images displayed for slide
             <img
               key={index}
               src={imageUrl}
