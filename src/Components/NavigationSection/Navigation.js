@@ -19,14 +19,14 @@ export default function Navigation() {
     <>
       <nav>
         <div className="NavbarContainer">
+          {/* LOGO */}
           <div className="NavLogo">
             <a href="/#">
               <img src={logo} alt="logo" />
             </a>
           </div>
-          {/* <div className="MobileIcon">
-            <FaBars />
-          </div> */}
+
+          {/* NAVIGATION LIST */}
           <div className={`itemContainer ${menuOpen ? "open" : ""}`}>
             <ul className="NavMenu">
               <li className="NavItem">
@@ -56,6 +56,7 @@ export default function Navigation() {
               </a>
             </div>
           </div>
+          {/* HAMBURGER MENU */}
           <div className="IconContainer">
             <div
               className={`MobileIcon hamburger ${menuOpen ? "open" : "close"}`}

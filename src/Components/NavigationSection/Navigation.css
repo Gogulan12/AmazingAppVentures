@@ -6,10 +6,8 @@
 }
 
 nav {
-  /* background-color: rgb(120, 201, 255); */
   background-color: rgb(174, 205, 238);
   height: 80px;
-  /* margin-top: -80px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,16 +15,6 @@ nav {
   position: sticky;
   top: 0;
   z-index: 10;
-}
-
-.IconContainer {
-  display: none;
-}
-
-@media (max-width: 960px) {
-  nav {
-    transition: 0.8s all ease;
-  }
 }
 
 .NavbarContainer {
@@ -58,7 +46,6 @@ nav {
   font-size: 1.5rem;
   display: flex;
   align-items: center;
-  /* margin-left: 24px; */
   font-weight: bold;
   text-decoration: none;
 }
@@ -67,8 +54,80 @@ nav {
   width: 150px;
 }
 
+.IconContainer {
+  display: none;
+}
+
 .MobileIcon {
   display: none;
+}
+
+/* ///////////////////////NAVIGATION LIST STYLING /////////////////// */
+
+.itemContainer {
+  display: flex;
+  gap: 100px;
+}
+
+.NavMenu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+  margin-right: -22px;
+}
+
+.NavItem {
+  height: 80px;
+}
+
+.NavLinks {
+  color: #0075aa;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.NavLinks:active {
+  border-bottom: 3px solid #0075aa;
+}
+
+.NavBtn {
+  display: flex;
+  align-items: center;
+}
+
+.NavBtnLink {
+  border-radius: 50px;
+  background: #0075aa;
+  white-space: nowrap;
+  padding: 10px 22px;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.NavBtnLink:hover {
+  transition: all 0.2s ease-in-out;
+  background: #fff;
+  color: #010606;
+}
+
+/* ///////////////////////////MEDIA QUERIES/////////////////////////// */
+
+@media (max-width: 960px) {
+  nav {
+    transition: 0.8s all ease;
+  }
 }
 
 @media (max-width: 768px) {
@@ -102,37 +161,12 @@ nav {
     cursor: pointer;
     color: #fff;
   }
-}
-
-.itemContainer {
-  display: flex;
-  gap: 100px;
-}
-
-.NavMenu {
-  display: flex;
-  align-items: center;
-  list-style: none;
-  text-align: center;
-  margin-right: -22px;
-}
-
-@media (max-width: 768px) {
-  /* .NavMenu {
-
-    position: fixed;
-    right: 100%;
-    top: 70px;
-    gap: 0;
-    flex-direction: column;
-  } */
   .itemContainer {
     position: fixed;
     right: -100%;
     top: 70px;
     gap: 0;
     flex-direction: column;
-    /* background-color: #78c9ff; */
     background-color: rgb(174, 205, 238);
     width: 100%;
     text-align: center;
@@ -145,34 +179,6 @@ nav {
   .itemContainer.open {
     right: 0;
   }
-}
-
-.NavItem {
-  height: 80px;
-}
-
-.NavLinks {
-  color: #0075aa;
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  padding: 0 1rem;
-  height: 100%;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.NavLinks:active {
-  border-bottom: 3px solid #0075aa;
-  /* color: #d93f2f; */
-}
-
-.NavBtn {
-  display: flex;
-  align-items: center;
-}
-
-@media (max-width: 768px) {
   .NavBtn {
     justify-content: center;
     margin: 20px 0;
@@ -180,25 +186,4 @@ nav {
   .NavMenu {
     margin: 0;
   }
-}
-
-.NavBtnLink {
-  border-radius: 50px;
-  background: #0075aa;
-  white-space: nowrap;
-  padding: 10px 22px;
-  font-size: 16px;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-}
-
-.NavBtnLink:hover {
-  transition: all 0.2s ease-in-out;
-  background: #fff;
-  color: #010606;
 }

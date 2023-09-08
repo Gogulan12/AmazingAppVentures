@@ -1,6 +1,8 @@
 import React from "react";
 
 import "./Home.css";
+
+// /////////////// COMPONENTS ////////////////////////
 import Navigation from "../Components/NavigationSection/Navigation";
 import Hero from "../Components/HeroSection/Hero";
 import About from "../Components/AboutSection/About";
