@@ -1,4 +1,3 @@
-// import React from "react";
 import React, { useEffect, useRef, useState } from "react";
 
 import "./About.css";
@@ -25,18 +24,19 @@ export default function About() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  // ///////////////////////////////////
+
   return (
-    // <div className="aboutsectioncontainer" id="about">
     <div
       className={`aboutsectioncontainer ${isVisible ? "visible" : ""}`}
       ref={aboutRef}
       id="about"
     >
       <div className="aboutSection">
+        {/* Image */}
         <div className="aboutImage">
-          <img src={teamCollab} alt="" />
+          <img src={teamCollab} alt="People Collaborating on a Project" />
         </div>
+        {/* Content */}
         <div className="aboutContent">
           <h2>Who are we?</h2>
           <p>
