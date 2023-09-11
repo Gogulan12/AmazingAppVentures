@@ -7,12 +7,38 @@
     rgba(174, 205, 238, 1) 0%,
     rgba(148, 233, 221, 0.020045518207282953) 100%
   );
+  /* position: absolute; */
 }
 .HeroSection {
   display: flex;
   height: 70vh;
   max-width: 1200px;
   margin: 0 auto;
+  /* background-image: url("../../Assets/circledots.svg"); */
+  /* overflow: visible; */
+  position: relative;
+  overflow: hidden;
+}
+
+/* .circlecontainer {
+  position: relative;
+  width: 100px;
+}
+
+.circle {
+  width: 100%;
+} */
+
+.circle {
+  position: absolute;
+  position: fixed;
+  top: 90px; /* Adjust the top position as needed */
+  right: 90px; /* Adjust the right position as needed */
+  /* max-width: 100%; 
+  max-height: 80%;  */
+  width: 900px;
+  z-index: 0; /* Set the image behind the text */
+  /* Preserve the aspect ratio and cover the container */
 }
 
 /* ////////////////////LEFT SECTION //////////////////// */
@@ -23,6 +49,7 @@
   justify-content: center;
   flex-direction: column;
   animation: leftsection 1s ease-in-out;
+  z-index: 1;
 }
 
 @keyframes leftsection {

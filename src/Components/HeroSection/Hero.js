@@ -4,6 +4,7 @@ import "./Hero.css";
 import apple from "../../Assets/apple.png";
 import google from "../../Assets/google.png";
 import onlineCollab from "../../Assets/onlineCollab.svg";
+import circle from "../../Assets/circledots.svg";
 
 export default function Hero() {
   return (
@@ -43,6 +44,7 @@ export default function Hero() {
           <div className="peekContainer bounce-image">
             <img src={onlineCollab} alt="People working together on an app" />
           </div>
+          {/* <img className="circle" src={circle} alt="" /> */}
         </div>
       </div>
     </div>
