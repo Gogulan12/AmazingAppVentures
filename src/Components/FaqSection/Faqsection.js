@@ -1,6 +1,7 @@
-// import React, { useState } from "react";
 import React, { useEffect, useRef, useState } from "react";
-import "./Faqsection.css"; // Create this CSS file for styling
+import "./Faqsection.css";
+
+// List of questions
 
 const faqData = [
   {
@@ -59,7 +60,6 @@ function Faqsection() {
   }, []);
 
   return (
-    // <div className="faqsection" id="faq">
     <div
       className={`faqsection ${isVisible ? "visible" : ""}`}
       id="faq"

@@ -74,11 +74,6 @@
   line-height: 1.6;
 }
 
-/* .contact-us {
-  display: flex;
-  flex-direction: column-reverse;
-} */
-
 .contact-us h2 {
   font-size: 2rem;
   color: #0075aa;
@@ -133,7 +128,6 @@ textarea {
 }
 
 .liveDemoText {
-  /* align-items: flex-start; */
   text-align: center;
 }
 
@@ -177,7 +171,6 @@ textarea {
   }
 
   .liveDemoText p {
-    /* padding-bottom: 50px; */
     width: 80%;
     margin: 0 auto;
     line-height: 1.8;
