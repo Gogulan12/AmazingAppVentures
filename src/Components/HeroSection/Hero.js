@@ -4,7 +4,7 @@ import "./Hero.css";
 import apple from "../../Assets/apple.png";
 import google from "../../Assets/google.png";
 import onlineCollab from "../../Assets/onlineCollab.svg";
-import circle from "../../Assets/circledots.svg";
+// import circle from "../../Assets/circledots.svg";
 
 export default function Hero() {
   return (
