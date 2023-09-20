@@ -24,9 +24,11 @@ function Contact() {
         <div className="contact-info">
           <h2>Information</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut
-            nisi commodo, viverra lectus vel, tristique ex. Aliquam in nibh id
-            urna facilisis sollicitudin.
+            Welcome to the future of corporate team building! At Amazing App
+            Ventures, we've redefined the way companies foster teamwork,
+            collaboration, and employee engagement. Say goodbye to traditional
+            team-building exercises and hello to a new era of interactive,
+            innovative games and challenges.
           </p>
         </div>
       </section>
