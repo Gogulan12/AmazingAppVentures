@@ -42,11 +42,11 @@ export default function VideoSection() {
         <div className={`video-container ${isVideoPlaying ? "visible" : ""}`}>
           {isVideoPlaying ? (
             <iframe
-              title="YouTube Video"
               width="840"
               height="472.5"
-              src="https://www.youtube.com/embed/lyKd9qD51fo"
-              frameBorder="0"
+              src="https://www.youtube.com/embed/IREniAC_7Dg"
+              title="The AppMazing Hunt"
+              frameborder="0"
               allowFullScreen
             ></iframe>
           ) : (
